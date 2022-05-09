@@ -1,0 +1,10 @@
+<Oglasi>
+    <Oglas>
+        <Kategorija></Kategorija>
+        <DatumIsteka></DatumIsteka>
+        <Cena></Cena>
+        <Tekst></Tekst>
+        <Oznaka></Oznaka>
+        <E-mail></E-mail>
+    </Oglas>
+</Oglasi>
