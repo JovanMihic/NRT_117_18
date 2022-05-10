@@ -1,0 +1,19 @@
+<OglasiLista xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:SchemaLocation="./Oglasi.xsd">
+    <Oglas>
+        <Kategorija>Automobil</Kategorija>
+        <DatumIsteka>2022-11-16</DatumIsteka>
+        <Cena valuta="eur">1300</Cena>
+        <Tekst>Automobil Opel Astra 2006. godiste na prodaju</Tekst>
+        <Oznaka>Polovno</Oznaka>
+        <E-mail>miki.mikic@gmlsi.com</E-mail>
+    </Oglas>
+    <Oglas>
+        <Kategorija>Stan</Kategorija>
+        <DatumIsteka>2022-12-06</DatumIsteka>
+        <Cena valuta="eur">300</Cena>
+        <Tekst>Trosoban stan na Mirijevu 50 kvadrata, 300e mesecno</Tekst>
+        <Oznaka>Novogradnja</Oznaka>
+        <Oznaka>Izdavanje</Oznaka>
+        <E-mail>stefan.mirijevo@yahsio.com</E-mail>
+    </Oglas>
+</OglasiLista>

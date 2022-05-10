@@ -11,7 +11,7 @@
                             <xs:element name="Cena">
                                 <xs:complexType>
                                     <xs:simpleContent>
-                                        <xs:extension base="xs:string">
+                                        <xs:extension base="xs:double">
                                             <xs:attribute name="valuta" use="required" />
                                         </xs:extension>
                                     </xs:simpleContent>
