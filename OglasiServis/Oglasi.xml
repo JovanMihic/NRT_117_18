@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE OglasiLista SYSTEM "Oglasi.dtd">
+<OglasiLista noNamespaceSchemaLocation="Oglasi.xsd">
+    <Oglas>
+        <Kategorija>Automobili</Kategorija>
+        <DatumIsteka>2022-11-16</DatumIsteka>
+        <Cena valuta="eur">1300</Cena>
+        <Tekst>Automobil Opel Astra 2006. godiste na prodaju</Tekst>
+        <Oznaka>Polovno</Oznaka>
+        <E-mail>miki.mikic@gmlsi.com</E-mail>
+    </Oglas>
+    <Oglas>
+        <Kategorija>Stanovi</Kategorija>
+        <DatumIsteka>2022-12-06</DatumIsteka>
+        <Cena valuta="eur">300</Cena>
+        <Tekst>Trosoban stan na Mirijevu 50 kvadrata, 300e mesecno</Tekst>
+        <Oznaka>Novogradnja</Oznaka>
+        <Oznaka>Izdavanje</Oznaka>
+        <E-mail>stefan.mirijevo@yahsio.com</E-mail>
+    </Oglas>
+    <Oglas>
+        <Kategorija>Konzole i igrice</Kategorija>
+        <DatumIsteka>2022-08-02</DatumIsteka>
+        <Cena valuta="rsd">18000</Cena>
+        <Tekst>Sony Playstation 3, slabo koriscen u odlicnom stanju, sa dzojsticima i kablovima</Tekst>
+        <Oznaka>Polovno</Oznaka>
+        <Oznaka>Kao novo</Oznaka>
+        <E-mail>djole.sony011@oepmnnsdn.com</E-mail>
+    </Oglas>
+</OglasiLista>
