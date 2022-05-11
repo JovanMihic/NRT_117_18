@@ -1,11 +1,11 @@
 <!ELEMENT OglasiLista (Oglas*)>
-<!ELEMENT Oglas (Kategorija,DatumIsteka,Cena,Tekst,Oznaka*,E-mail+)>
+<!ELEMENT Oglas (Kategorija,DatumIsteka,Cena,Tekst,Oznaka*,Email+)>
 <!ELEMENT Kategorija (#PCDATA)>
 <!ELEMENT DatumIsteka (#PCDATA)>
 <!ELEMENT Cena (#PCDATA)>
 <!ELEMENT Tekst (#PCDATA)>
 <!ELEMENT Oznaka (#PCDATA)>
-<!ELEMENT E-mail (#PCDATA)>
+<!ELEMENT Email (#PCDATA)>
 
 <!ATTLIST OglasiLista noNamespaceSchemaLocation CDATA #REQUIRED>    
 <!ATTLIST Cena valuta (rsd|eur|usd) "rsd">
