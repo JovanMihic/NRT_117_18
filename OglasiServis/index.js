@@ -14,4 +14,8 @@ app.get('/svioglasi', (request, response) => {
     response.send(oglasiServis.sviOglasi());
 });
 
+app.post('/addOglas',(request, response)=>{
+    oglasiServis.addOglas(request.body);
+    response.end("OK");
+})
 app.listen(port, () => { console.log(`Server pokrenut na portu ${port}`) });
