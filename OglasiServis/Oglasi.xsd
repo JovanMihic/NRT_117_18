@@ -22,7 +22,7 @@
                             <xs:element name="DatumIsteka" type="xs:date" />
                             <xs:element name="Cena">
                                 <xs:complexType>
-                                    <xs:simpleContent>
+                                    <xs:simpleContent>                                        
                                         <xs:extension base="xs:string">
                                             <xs:attribute name="valuta" use="required">
                                                 <xs:simpleType>

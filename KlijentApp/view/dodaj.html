@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dodaj novi oglas</title>
+</head>
+
+<body>
+    <h3>Dodaj Novi Oglas</h3>
+    <hr>
+    <form action="/snimiOglas" method="post">
+        <label for="Kategorija">Kategorija</label>
+        <select name="Kategorija">
+            <option value="Automobili">Automobili</option>
+            <option value="Stanovi">Stanovi</option>
+            <option value="Alat">Alat</option>
+            <option value="Kompjuteri i delovi">Kompjuteri i delovi</option>
+            <option value="Konzole i igrice">Konzole i igrice</option>
+            <option value="Audio i video oprema">Audio i video oprema</option>
+            <option value="Odeca">Odeca</option>
+        </select>
+        <br>
+        <label for="Datum">Datum</label><input type="date" name="Datum">
+        <br>
+        <label for="CenaVrednost">Cena</label><input type="number" name="CenaVrednost">
+        <select name="CenaValuta">
+            <option value="rsd">rsd</option>
+            <option value="eur">eur</option>
+            <option value="usd">usd</option>
+        </select>
+        <br>
+        <label for="Tekst">Tekst oglasa</label><input type="text" name="Tekst">
+        <br>
+
+        <label for="Oznaka">Oznaka</label><input type="text" name="Oznaka">
+        <br>
+        <label for="Email">Email</label><input type="text" name="Email">
+        <br>
+        <button type="submit">Dodaj Oglas</button>
+    </form>
+</body>
+
+</html>
