@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/stil.css">
+    <title>Svi Oglasi</title>
+</head>
+
+<body>
+    <a href="/">
+        <h1 style="position: relative; left:1%;"><img src="/img/text.gif" alt="logo gif"></h1>
+    </a>
+
+
+    <h3 style="left:1%;">Svi oglasi</h3>
+    <hr>
+
+    <input type="button" value="Dodaj novi oglass" onclick="window.location.href=`http://localhost:5000/dodajOglas`;">
+    <input type="button" value="Vrati se na pocetnu" onclick="window.location.href=`http://localhost:5000/`;">
+    <hr>
+    <table id="oglasi" cellpadding="10px" width="100%">
+        <thead>
+            <th>
+                <h3>Tekst</h3>
+            </th>
+            <th>
+                <h3>Kategorija</h3>
+            </th>
+            <th>
+                <h3>Datum isteka</h3>
+            </th>
+            <th>
+                <h3>Cena</h3>
+            </th>
+            <th>
+                <h3>Oznake</h3>
+            </th>
+            <th >
+                <h3>Email</h3>
+            </th>
+        </thead>
+        <tbody>
+            #{data}
+        </tbody>
+    </table>
+</body>
+<script>
+
+
+
+</script>
+
+</html>

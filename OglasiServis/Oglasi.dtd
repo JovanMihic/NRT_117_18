@@ -6,6 +6,6 @@
 <!ELEMENT Tekst (#PCDATA)>
 <!ELEMENT Oznaka (#PCDATA)>
 <!ELEMENT Email (#PCDATA)>
-
-<!ATTLIST OglasiLista noNamespaceSchemaLocation CDATA #REQUIRED>    
+<!ATTLIST OglasiLista noNamespaceSchemaLocation CDATA #REQUIRED>
 <!ATTLIST Cena valuta (rsd|eur|usd) "rsd">
+<!ATTLIST Email Tip (privatni|sluzbeni) "privatni">

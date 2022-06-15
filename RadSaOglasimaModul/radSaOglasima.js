@@ -36,6 +36,14 @@ exports.addOglas = (noviOglas) => {
 exports.getOglas = (id) => {
     return this.sviOglasi().find(x => x.id == id);
 }
+exports.izmeniOglas = (izmenjen) =>{
+    let oglasi=this.sviOglasi(); 
+    let oglas = this.getOglas(id)
+    // izmenjen.id = id //mozda nepotrebno
+    this.deleteOglas(id)    
+    oglasi.push(izmenjen)
+
+}
 exports.deleteOglas = (id) => {
     snimiOglase(this.sviOglasi().filter(oglas=>oglas.id!=id));
 }

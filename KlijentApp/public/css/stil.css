@@ -1,0 +1,22 @@
+tr {
+    background-color: #ffdd99;
+}
+
+tr:nth-child(2n) {
+    background-color: #ffc34d;
+}
+
+thead>tr>th {
+    background-color: #db541f;
+}
+
+body {
+    background-color: rgb(199, 129, 25);
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}

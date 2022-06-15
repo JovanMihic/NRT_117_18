@@ -13,7 +13,14 @@ app.get('/', (request, response) => {
 app.get('/svioglasi', (request, response) => {
     response.send(oglasiServis.sviOglasi());
 });
-
+app.delete('/obrisiOglas/:id',(request, response)=>{
+    oglasiServis.deleteOglas(request.params["id"]);
+    response.end("OK");
+});
+app.get('/obrisiOglas/:id',(request, response)=>{
+    oglasiServis.deleteOglas(request.params["id"]);
+    response.end("OK");
+});
 app.post('/addOglas',(request, response)=>{
     oglasiServis.addOglas(request.body);
     response.end("OK");

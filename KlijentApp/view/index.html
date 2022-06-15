@@ -5,26 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pocetna</title>
+    <title>MegaGigaOglasi</title>
 </head>
 
 <body>
 
-    <h1 style="text-align: center;">Svi oglasi</h1>
+    <a href="/"><h1 style="position: relative; left:1%;"><img src="/img/text.gif" alt="logo gif"  ></h1></a> 
+    <h3 style="left:1%">Pocetna</h3>
     <hr>
-    <table id="oglasi" cellpadding="10px">
-        <thead>
-            <th><h3>Tekst</h3></th>
-            <th><h3>Kategorija</h3></th>
-            <th><h3>Datum isteka</h3></th>
-            <th><h3>Cena</h3></th>
-            <th><h3>Oznake</h3></th>
-            <th><h3>Email</h3></th>
-        </thead>
-        <tbody>
-            #{data}
-        </tbody>
-    </table>
+    <!-- izmeniti ove linkove  -->
+        <input type="button" value="Dodaj novi Oglas" onclick="window.location.href=`http://localhost:5000/dodajOglas`;">
+        <input type="button" value="Pogledaj oglase" onclick="window.location.href=`http://localhost:5000/sviOglasi`;">
+    <hr>
+    
+    
 </body>
 <script>
 

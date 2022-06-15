@@ -22,8 +22,8 @@
                             <xs:element name="DatumIsteka" type="xs:date" />
                             <xs:element name="Cena">
                                 <xs:complexType>
-                                    <xs:simpleContent>                                        
-                                        <xs:extension base="xs:string">
+                                    <xs:simpleContent>
+                                        <xs:extension base="minimalnaVrednost">
                                             <xs:attribute name="valuta" use="required">
                                                 <xs:simpleType>
                                                     <xs:restriction base="xs:string">
@@ -35,15 +35,68 @@
                                             </xs:attribute>
                                         </xs:extension>
                                     </xs:simpleContent>
+                                    <!-- <xs:extension base="xs:double">                                            
+                                            <xs:attribute name="valuta" use="required">
+                                                <xs:simpleType>
+                                                    <xs:restriction base="xs:string">
+                                                        <xs:enumeration value="rsd" />
+                                                        <xs:enumeration value="eur" />
+                                                        <xs:enumeration value="usd" />
+                                                    </xs:restriction>
+                                                </xs:simpleType>
+                                            </xs:attribute>                                           
+                                        </xs:extension> -->
                                 </xs:complexType>
                             </xs:element>
-                            <xs:element name="Tekst" type="xs:string" />
+
+                            <xs:element name="Tekst">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:minLength value="10" />
+                                        <xs:maxLength value="180" />
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
                             <xs:element name="Oznaka" maxOccurs="unbounded" type="xs:string" />
-                            <xs:element name="Email" type="xs:string" />
+                            <xs:element name="Email" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="emailPattern">
+                                            <xs:attribute name="Tip" use="required">
+                                                <xs:simpleType>
+                                                    <xs:restriction base="xs:string">
+                                                        <xs:enumeration value="privatni" />
+                                                        <xs:enumeration value="sluzbeni" />
+                                                    </xs:restriction>
+                                                </xs:simpleType>
+                                            </xs:attribute>
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+
+                                <!-- <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"></xs:pattern>
+                                    </xs:restriction>
+
+                                </xs:simpleType> -->
+
+                            </xs:element>
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>
             </xs:sequence>
+            <xs:attribute type="xs:string" name="noNamespaceSchemaLocation" />
         </xs:complexType>
     </xs:element>
+    <xs:simpleType name="minimalnaVrednost">
+        <xs:restriction base="xs:double">
+            <xs:minInclusive value="0" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="emailPattern">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[^@].*@[^.].*[.].{1}.*"></xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
 </xs:schema>

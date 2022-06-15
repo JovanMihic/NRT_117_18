@@ -7,8 +7,8 @@
         <Cena valuta="eur">1300</Cena>
         <Tekst>Automobil Opel Astra 2006. godiste na prodaju</Tekst>
         <Oznaka>Polovno</Oznaka>
-        <Email>miki.mikic@gmlsi.com</Email>
-        <Email>miki.krnjaca@gmlsi.com</Email>
+        <Email Tip="privatni">miki.mikic@gmlsi.com</Email>
+        <Email Tip="privatni">miki.krnjaca@gmlsi.com</Email>
     </Oglas>
     <Oglas>
         <Kategorija>Stanovi</Kategorija>
@@ -17,7 +17,7 @@
         <Tekst>Trosoban stan na Mirijevu 50 kvadrata, 300e mesecno</Tekst>
         <Oznaka>Novogradnja</Oznaka>
         <Oznaka>Izdavanje</Oznaka>
-        <Email>stefan.mirijevo@yahsio.com</Email>
+        <Email Tip="privatni">stefan.mirijevo@yahsio.com</Email>
     </Oglas>
     <Oglas>
         <Kategorija>Konzole i igrice</Kategorija>
@@ -26,6 +26,6 @@
         <Tekst>Sony Playstation 3, slabo koriscen u odlicnom stanju, sa dzojsticima i kablovima</Tekst>
         <Oznaka>Polovno</Oznaka>
         <Oznaka>Kao novo</Oznaka>
-        <Email>djole.sony011@oepmnnsdn.com</Email>
+        <Email Tip="privatni">djole.sony011@oepmnnsdn.com</Email>
     </Oglas>
 </OglasiLista>
